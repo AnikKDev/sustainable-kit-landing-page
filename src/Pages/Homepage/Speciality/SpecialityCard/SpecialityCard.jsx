@@ -16,10 +16,10 @@ const BenefitsCard = ({ data }) => {
         </div>
         <div className="ml-2">
           {/* text */}
-          <h3 className="text-xl font-semibold text-secondary">
+          <h3 className="text-lg font-semibold text-secondary">
             {data.subTitle}
           </h3>
-          <p className="mt-3 text-gray-500">{data.description}</p>
+          <p className="mt-1 text-gray-500 text-sm">{data.description}</p>
         </div>
       </div>
     </div>
