@@ -4,7 +4,7 @@ const TestimonialCard = () => {
   return (
     <div>
       <div
-        className={`card glass max-w-96 bg-base-100 text-white shadow-xl ${styles.testimonialCard__contianer}`}
+        className={`card glass max-w-96 text-white shadow-xl ${styles.testimonialCard__contianer}`}
       >
         <div className="card-body">
           <div className="flex items-center">
