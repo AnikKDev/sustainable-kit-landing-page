@@ -1,3 +1,4 @@
 .topNav__searchContainer {
   border: 2px solid #347758 !important;
+  transition: 0.4s all;
 }

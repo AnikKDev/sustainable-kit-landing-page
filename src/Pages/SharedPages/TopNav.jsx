@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import styles from "./TopNav.module.css";
 const TopNav = () => {
   const [inputContainerClass, setInputContainerClass] = useState(false);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (inputRef.current && !inputRef.current.contains(event.target)) {
+        setInputContainerClass(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [inputRef]);
   const searchBar = (
     <>
       <div
@@ -11,7 +25,8 @@ const TopNav = () => {
         }`}
       >
         <input
-          onFocus={() => setInputContainerClass(true)}
+          ref={inputRef}
+          onClick={() => setInputContainerClass(true)}
           type="text"
           placeholder="Search..."
           className={`w-10/12 h-full border-none outline-none focus-visible:border-none focus:border-none bg-transparent ${styles.topNav__searchBar}`}
