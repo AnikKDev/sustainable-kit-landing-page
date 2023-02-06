@@ -3,7 +3,7 @@ import styles from "./PercentageCard.module.css";
 const PercentageCard = () => {
   return (
     <div
-      className={`card my-3 w-96 bg-base-100 shadow-xl image-full ${styles.percentageCard__container}`}
+      className={`card my-3 max-w-96 bg-base-100 shadow-xl image-full ${styles.percentageCard__container}`}
     >
       <figure>
         <img
