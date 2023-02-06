@@ -5,7 +5,7 @@ import ProductsMainCard from "./ProductsMainCard/ProductsMainCard";
 
 const Products = () => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+    <div className="grid my-12 lg:grid-cols-2 grid-cols-1 gap-4">
       <div>
         <ProductsMainCard />
       </div>
