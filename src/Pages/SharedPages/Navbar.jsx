@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoMdCall } from "react-icons/io";
 import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 const Navbar = () => {
@@ -13,7 +13,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-primary px-4 rounded-lg w-[90%] mx-auto sticky top-0 z-50 backdrop-blur-md">
+    <div
+      className={`navbar bg-base-200 backdrop-blur-lg px-4 rounded-lg w-[90%] mx-auto sticky top-0 z-50`}
+    >
       <div className="flex-1 ">
         <ul className="menu menu-horizontal px-1">{navContents}</ul>
       </div>
