@@ -4,6 +4,7 @@ import Products from "./Products/Products";
 import ProductsCarouselContainer from "./Products/ProductsCarouselCard/ProductsCarouselContainer";
 import Speciality from "./Speciality/Speciality";
 import Testimonial from "./Testimonial/Testimonial";
+import TopAndBest from "./TopAndBest/TopAndBest";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Products />
       <Products />
       <Testimonial />
+      <TopAndBest />
     </div>
   );
 };
