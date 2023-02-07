@@ -2,7 +2,7 @@ import React from "react";
 import TopAndBestSmallCard from "../TopAndBestSmallCard";
 import styles from "./TopRated.module.css";
 import { AiFillCaretRight } from "react-icons/ai";
-const TopRated = () => {
+const TopRated = ({ productData }) => {
   const dummyCardArray = [1, 2, 3, 4, 5, 6];
   return (
     <div className={`w-4/5 ${styles.topRated__container}`}>
@@ -16,8 +16,8 @@ const TopRated = () => {
         Rated <AiFillCaretRight color={"#347758"} />
       </h1>
       <div className="grid grid-cols-1 gap-3">
-        {dummyCardArray.map((data) => (
-          <TopAndBestSmallCard />
+        {productData?.data?.map((data) => (
+          <TopAndBestSmallCard data={data} />
         ))}
       </div>
     </div>
