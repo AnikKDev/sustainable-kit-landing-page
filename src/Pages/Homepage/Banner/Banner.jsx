@@ -11,8 +11,14 @@ const Banner = () => {
       </div>
       <div className="flex flex-col justify-around">
         {/* small percentage card's will be here */}
-        <PercentageCard />
-        <PercentageCard />
+        <PercentageCard
+          title="40% Off Everyday Fresh"
+          subHeading={"On All Weekend Sales"}
+        />
+        <PercentageCard
+          title="20% Off Waste Management"
+          subHeading={"On All Weekend Sales"}
+        />
       </div>
     </div>
   );

@@ -1,36 +1,40 @@
 import React from "react";
 import SpecialityCard from "../Speciality/SpecialityCard/SpecialityCard";
-import { MdOutlineFoodBank } from "react-icons/md";
+import { MdOutlineNaturePeople } from "react-icons/md";
+import { AiFillShopping, AiOutlineSecurityScan } from "react-icons/ai";
+import { BiSupport } from "react-icons/bi";
 const Speciality = () => {
   // const { icon } = servicesData;
   const servicesData = [
     {
-      title: "Medicine Selection To Prescribe From Around The Globe",
-      description: "Eating locally grown foods has many benefits",
-      icon: <MdOutlineFoodBank size={40} />,
+      title: "Wide range of eco-friendly products",
+      description:
+        "Offer a diverse range of products made from eco-friendly materials.",
+      icon: <MdOutlineNaturePeople size={40} />,
       image:
         "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=940&q=80",
-      subTitle: "Medicine Selection",
+      subTitle: "Eco-friendly products",
     },
     {
       title: "Convenient Schedule",
-      description: "Made with passion by 300+ curators across.",
-      icon: <MdOutlineFoodBank size={40} />,
+      description: "Make shopping for sustainable products effortless.",
+      icon: <AiFillShopping size={40} />,
       image:
         "https://images.unsplash.com/37/tEREUy1vSfuSu8LzTop3_IMG_2538.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      subTitle: "Convenient Schedule",
+      subTitle: "Convenient Shopping",
     },
     {
       title: "Connect With Doctors Across The Globe",
-      description: "Free shipping is valid on orders of $50 or more shipped",
-      icon: <MdOutlineFoodBank size={40} />,
-      subTitle: "Doctors Around Globe",
+      description:
+        "Products are sourced from ethical and environmentally responsible suppliers.",
+      icon: <AiOutlineSecurityScan size={40} />,
+      subTitle: "Responsible and Ethical",
     },
     {
       title: "Find The Right Doctor For You",
-      description: "Eat local, consume local, closer to nature.",
-      icon: <MdOutlineFoodBank size={40} />,
-      subTitle: "Options To Decide",
+      description: "Provide exceptional customer service.",
+      icon: <BiSupport size={40} />,
+      subTitle: "Dedicated Support",
     },
   ];
   return (

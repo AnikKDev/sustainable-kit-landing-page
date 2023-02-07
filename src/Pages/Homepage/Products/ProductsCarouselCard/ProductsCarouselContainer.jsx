@@ -7,12 +7,11 @@ import "./ProductsCarouselContainer.css";
 import ProductsCarouselCard from "./ProductsCarouselCard";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const ProductsCarouselContainer = () => {
-  const dummyArray = [1, 2, 3, 4];
+const ProductsCarouselContainer = ({ productList }) => {
   return (
     <div className="">
       <Swiper
-        loop={true}
+        // loop={true}
         autoplay={{
           delay: 10000,
           disableOnInteraction: false,
@@ -22,9 +21,9 @@ const ProductsCarouselContainer = () => {
         slidesPerView={2}
         spaceBetween={20}
       >
-        {dummyArray.map((item) => (
+        {productList?.map((item) => (
           <SwiperSlide key={Math.random().toString()}>
-            <ProductsCarouselCard />{" "}
+            <ProductsCarouselCard item={item} />{" "}
           </SwiperSlide>
         ))}
       </Swiper>

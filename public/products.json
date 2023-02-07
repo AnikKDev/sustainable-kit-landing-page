@@ -1,54 +1,68 @@
 {
-    "shopping":[{
-      "name": "Bamboo Toothbrush",
-      "image":"",
-      "category":"Personal Care",
-      "description":"A toothbrush made from bamboo, which is a renewable and biodegradable material"
+  "shopping": {
+    "cardInfo": {
+      "title": "Sustainable Living Made Simple",
+      "description": "Discover a world of sustainable products that make it easy to live an eco-friendly lifestyle. From reusable bags and recycled paper products to organic cotton clothing, we've got everything you need to reduce your impact on the environment and make a difference. Shop with confidence knowing all our products are sourced from responsible and ethical suppliers.",
+      "image": "https://images.unsplash.com/photo-1591184510248-6be5138855a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=343&q=80"
     },
-  {
-      "name": "Reusable Water Bottle",
-      "image":"",
-      "category":"Drinkware",
-      "description":"A water bottle that can be reused multiple times, reducing the need for disposable plastic water bottles."
-    },
-    {
+    "data": [
+      {
+        "name": "Bamboo Toothbrush",
+        "image": "https://images.unsplash.com/photo-1589365252845-092198ba5334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Personal Care",
+        "description": "A toothbrush made from bamboo, which is a renewable and biodegradable material"
+      },
+      {
+        "name": "Reusable Water Bottle",
+        "image": "https://plus.unsplash.com/premium_photo-1664527305901-db3d4e724d15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Drinkware",
+        "description": "A water bottle that can be reused multiple times, reducing the need for disposable plastic water bottles."
+      },
+      {
         "name": "Cloth Shopping Bag",
-        "image":"",
-        "category":"Shopping",
-        "description":"Reusable shopping bags maded from cotton or other natural fibers, reducing the need for disposable plastic bags."
+        "image": "https://images.unsplash.com/photo-1606820049407-03c1821c99ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Shopping",
+        "description": "Reusable shopping bags maded from cotton or other natural fibers, reducing the need for disposable plastic bags."
       },
       {
         "name": "Plant Based Reusable Containers",
-        "image":"",
-        "category":"Shopping",
-        "description":"100% recyclable. Govt approved, tested and approved in TUV Rhineland Germany. Easily Portable takeaway containers. Odorless, tasteless and doesn't react with hot food."
+        "image": "https://images.unsplash.com/photo-1633878353863-2afe00fa532d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Shopping",
+        "description": "100% recyclable. Govt approved, tested and approved in TUV Rhineland Germany. Easily Portable takeaway containers. Odorless, tasteless and doesn't react with hot food."
       }
-
-],
-"wasteManagement":[
-    {
+    ]
+  },
+  "wasteManagement": {
+    "cardInfo": {
+      "title": "Effective Waste Management for a Greener Tomorrow",
+      "description": "Take control of your waste with our range of waste management solutions. From compost bins to reusable containers, we help you reduce your carbon footprint and protect the environment. Discover how you can make a difference, one step at a time.",
+      "image": "https://images.unsplash.com/photo-1545303234-a34381f8b5cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=446&q=80"
+    },
+    "data": [
+      {
         "name": "Compostable Trash Bags",
-        "image":"",
-        "category":"Waste Management",
-        "description":"Trash bags made from buidegradable materials that can be composted instead of ending up in landfills."
+        "image": "https://images.unsplash.com/photo-1628752660419-ad1c751abe72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Waste Management",
+        "description": "Trash bags made from buidegradable materials that can be composted instead of ending up in landfills."
       },
       {
-        "name": "Solar-Powered Carger",
-        "image":"",
-        "category":"Electronics",
-        "description":"A charger that harnesses the power of the sub to change electronic devices, reducing the need for electricity from non-renewable sources."
+        "name": "Solar-Powered Charger",
+        "image": "https://images.unsplash.com/photo-1600490722773-35753aea6332?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "category": "Electronics",
+        "description": "A charger that harnesses the power of the sub to change electronic devices, reducing the need for electricity from non-renewable sources."
       },
       {
-        "name":"Plant Based Reusable Cups",
-        "image":"",
-        "description":"Cups, that causes no harm to the nature and every batch of cups is unique due to being natural. Odorless tasteless and doesn't react with hot beverages and lightweight.",
-        "category":"Waste Management"
+        "name": "Plant Based Reusable Cups",
+        "image": "https://images.unsplash.com/photo-1545165770-fe14a8bbe6ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
+        "description": "Cups, that causes no harm to the nature and every batch of cups is unique due to being natural. Odorless tasteless and doesn't react with hot beverages and lightweight.",
+        "category": "Waste Management"
       },
       {
-        "name":"Reusable Bamboo Straw",
-        "image":"",
-        "description":"100% Natural, toxic-free, vegan. Odorless, tasteless, washable, resuable and durable. Biodegradable packaging.",
-        "category":"Waste Management"
+        "name": "Reusable Bamboo Straw",
+        "image": "https://plus.unsplash.com/premium_photo-1661722017296-8e33753d149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "description": "100% Natural, toxic-free, vegan. Odorless, tasteless, washable, resuable and durable. Biodegradable packaging.",
+        "category": "Waste Management"
       }
-]
+    ]
   }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./PercentageCard.module.css";
-const PercentageCard = () => {
+const PercentageCard = ({ title, subHeading }) => {
   return (
     <div
       className={`card my-3 max-w-96 bg-base-100 shadow-xl image-full ${styles.percentageCard__container}`}
@@ -13,10 +13,8 @@ const PercentageCard = () => {
       </figure>
       <div className="card-body justify-center items-center">
         <div>
-          <h2 className="card-title text-4xl text-white">Shoes!</h2>
-          <p className="text-white">
-            If a dog chews shoes whose shoes does he choose?
-          </p>
+          <h2 className="card-title text-4xl text-white">{title}</h2>
+          <p className="text-white">{subHeading}</p>
         </div>
       </div>
     </div>
