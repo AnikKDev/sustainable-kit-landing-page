@@ -1,0 +1,54 @@
+{
+    "shopping":[{
+      "name": "Bamboo Toothbrush",
+      "image":"",
+      "category":"Personal Care",
+      "description":"A toothbrush made from bamboo, which is a renewable and biodegradable material"
+    },
+  {
+      "name": "Reusable Water Bottle",
+      "image":"",
+      "category":"Drinkware",
+      "description":"A water bottle that can be reused multiple times, reducing the need for disposable plastic water bottles."
+    },
+    {
+        "name": "Cloth Shopping Bag",
+        "image":"",
+        "category":"Shopping",
+        "description":"Reusable shopping bags maded from cotton or other natural fibers, reducing the need for disposable plastic bags."
+      },
+      {
+        "name": "Plant Based Reusable Containers",
+        "image":"",
+        "category":"Shopping",
+        "description":"100% recyclable. Govt approved, tested and approved in TUV Rhineland Germany. Easily Portable takeaway containers. Odorless, tasteless and doesn't react with hot food."
+      }
+
+],
+"wasteManagement":[
+    {
+        "name": "Compostable Trash Bags",
+        "image":"",
+        "category":"Waste Management",
+        "description":"Trash bags made from buidegradable materials that can be composted instead of ending up in landfills."
+      },
+      {
+        "name": "Solar-Powered Carger",
+        "image":"",
+        "category":"Electronics",
+        "description":"A charger that harnesses the power of the sub to change electronic devices, reducing the need for electricity from non-renewable sources."
+      },
+      {
+        "name":"Plant Based Reusable Cups",
+        "image":"",
+        "description":"Cups, that causes no harm to the nature and every batch of cups is unique due to being natural. Odorless tasteless and doesn't react with hot beverages and lightweight.",
+        "category":"Waste Management"
+      },
+      {
+        "name":"Reusable Bamboo Straw",
+        "image":"",
+        "description":"100% Natural, toxic-free, vegan. Odorless, tasteless, washable, resuable and durable. Biodegradable packaging.",
+        "category":"Waste Management"
+      }
+]
+  }
