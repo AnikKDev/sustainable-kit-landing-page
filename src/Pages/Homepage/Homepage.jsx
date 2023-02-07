@@ -7,6 +7,7 @@ import Testimonial from "./Testimonial/Testimonial";
 import TopAndBest from "./TopAndBest/TopAndBest";
 
 const Homepage = () => {
+  // array for products
   return (
     <div>
       <Banner />
