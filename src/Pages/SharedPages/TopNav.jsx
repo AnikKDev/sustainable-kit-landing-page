@@ -68,7 +68,7 @@ const TopNav = () => {
             <li>{searchBar}</li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Sustainable Kit</a>
+        <a className="btn btn-ghost normal-case text-xl">Nurture-Nature</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         {/* search input */}
