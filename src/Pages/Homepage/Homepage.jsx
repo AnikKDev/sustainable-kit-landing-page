@@ -21,8 +21,13 @@ const Homepage = () => {
     <div>
       <Banner />
       <Speciality />
-      <Products productData={products.shopping} />
-      <Products productData={products.wasteManagement} />
+      <div data-aos="fade-up" data-aos-duration="1500">
+        <Products productData={products.shopping} />
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <Products productData={products.wasteManagement} />
+      </div>
       <Testimonial />
       <TopAndBest />
     </div>

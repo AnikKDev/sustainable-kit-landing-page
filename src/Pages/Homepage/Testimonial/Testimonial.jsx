@@ -13,9 +13,15 @@ const Testimonial = () => {
       </h1>
       {/* cards will be here */}
       <div className="grid grid-cols-1 lg:grid-cols-3 my-12 gap-3">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <TestimonialCard />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <TestimonialCard />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+          <TestimonialCard />
+        </div>
       </div>
     </div>
   );

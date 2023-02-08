@@ -11,7 +11,13 @@ const TopAndBest = () => {
     });
   }, []);
   return (
-    <div className="grid grid-cols-1 my-20 justify-items-center lg:grid-cols-2 gap-6">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="2000"
+      className="grid grid-cols-1 my-20 justify-items-center lg:grid-cols-2
+      gap-6"
+    >
       <TopRated productData={topAndBest.topRated} />
       <BestSeller productData={topAndBest.bestSeller} />
     </div>
