@@ -7,12 +7,10 @@ import { BsGoogle } from "react-icons/bs";
 const Signin = () => {
   const navigate = useNavigate();
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-  if (user) {
-    console.log(user);
-  }
   useEffect(() => {
     if (user) {
-      toast.error("Logged in as " + user?.displayName);
+      toast.success("Logged in as " + user?.user?.displayName);
+
       navigate("/");
     }
   }, [user]);

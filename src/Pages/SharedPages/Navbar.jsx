@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { IoMdCall } from "react-icons/io";
 import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navContents = (
     <>
       <li>
-        <a>Home</a>
+        <Link to="/">Home</Link>
         <a>Items</a>
         <a>About</a>
         <a>Contact</a>
