@@ -5,10 +5,14 @@ import { GrFavorite } from "react-icons/gr";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 import styles from "./TopNav.module.css";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import { useNavigate } from "react-router-dom";
 const TopNav = () => {
+  const [user, loading, error] = useAuthState(auth);
   const [inputContainerClass, setInputContainerClass] = useState(false);
   const inputRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (inputRef.current && !inputRef.current.contains(event.target)) {
@@ -74,18 +78,33 @@ const TopNav = () => {
         {/* search input */}
         {searchBar}
       </div>
-      <div className="navbar-end">
-        <div>
-          <div
-            className={`flex justify-center items-center cursor-pointer ${styles.topNav__register}`}
-          >
-            <div className={`${styles.topNav__registerIcon} mx-2`}>
-              <CgProfile className="text-secondary" size={30} />
+      {user?.displayName ? (
+        <div className="navbar-end">
+          <div>
+            <div
+              className={`flex justify-center items-center cursor-pointer ${styles.topNav__register}`}
+            >
+              <div className={`${styles.topNav__registerIcon} mx-2`}>
+                <CgProfile className="text-secondary" size={30} />
+              </div>
+              <p className="transition-all"> Profile</p>
             </div>
-            <p className="transition-all"> Register</p>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="navbar-end">
+          <div onClick={() => navigate("/signin")}>
+            <div
+              className={`flex justify-center items-center cursor-pointer ${styles.topNav__register}`}
+            >
+              <div className={`${styles.topNav__registerIcon} mx-2`}>
+                <CgProfile className="text-secondary" size={30} />
+              </div>
+              <p className="transition-all"> Register</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
