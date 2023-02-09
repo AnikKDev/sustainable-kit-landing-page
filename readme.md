@@ -13,6 +13,7 @@ A website dedicated to providing sustainable solutions for a better tomorrow.
 - Tailwind
 - DaisyUI
 - AOS
+- Google Firebase (For google authentication)
 
 ## Purpose
 
