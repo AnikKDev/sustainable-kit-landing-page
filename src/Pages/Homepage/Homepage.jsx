@@ -1,11 +1,16 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { lazyLoad } from "./LazyLoads/lazyload";
+import Banner from "./Banner/Banner";
+import Products from "./Products/Products";
+import Speciality from "./Speciality/Speciality";
+import Testimonial from "./Testimonial/Testimonial";
+import TopAndBest from "./TopAndBest/TopAndBest";
+/* import { lazyLoad } from "./LazyLoads/lazyload";
 const Banner = lazyLoad("../Banner/Banner");
 const Products = lazyLoad("../Products/Products");
 const Speciality = lazyLoad("../Speciality/Speciality");
 const Testimonial = lazyLoad("../Testimonial/Testimonial");
-const TopAndBest = lazyLoad("../TopAndBest/TopAndBest");
+const TopAndBest = lazyLoad("../TopAndBest/TopAndBest"); */
 const Homepage = () => {
   const [products, setProducts] = useState({});
   useEffect(() => {

@@ -10,7 +10,10 @@ const Signin = () => {
   useEffect(() => {
     if (user) {
       toast.success("Logged in as " + user?.user?.displayName);
-
+      console.log(
+        "this is after successfully logged in. This is the user data we get when we click on sign in with google -->",
+        user
+      );
       navigate("/");
     }
   }, [user]);

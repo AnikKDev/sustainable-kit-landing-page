@@ -5,6 +5,7 @@ import Loadingpage from "../utils/Loadingpage";
 import FooterPage from "./SharedPages/FooterPage";
 import Navbar from "./SharedPages/Navbar";
 import TopNav from "./SharedPages/TopNav";
+import DownloadButton from "../test/DownloadButton";
 const Main = () => {
   return (
     <div className="">
@@ -12,7 +13,7 @@ const Main = () => {
       {/* nav */}
       <TopNav />
       <Navbar />
-
+      <DownloadButton />
       <div className="max-w-7xl w-[95%] mx-auto my-16">
         {/* {isPending && <Loadingpage />} */}
         <Suspense fallback={<Loadingpage />}>

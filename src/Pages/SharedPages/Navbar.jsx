@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { IoMdCall } from "react-icons/io";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import auth from "../../../firebase.init";
+import DownloadButton from "../../test/DownloadButton";
 const Navbar = () => {
   const navContents = (
     <>
@@ -10,6 +13,7 @@ const Navbar = () => {
         <a>Items</a>
         <a>About</a>
         <a>Contact</a>
+        {/* <DownloadButton /> */}
       </li>
     </>
   );

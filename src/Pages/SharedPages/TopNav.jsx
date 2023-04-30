@@ -5,11 +5,13 @@ import { GrFavorite } from "react-icons/gr";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 import styles from "./TopNav.module.css";
-import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 const TopNav = () => {
   const [user, loading, error] = useAuthState(auth);
+  const [signOut, loadingSignout, errorSignout] = useSignOut(auth);
   const [inputContainerClass, setInputContainerClass] = useState(false);
   const inputRef = useRef(null);
   const navigate = useNavigate();
@@ -25,6 +27,12 @@ const TopNav = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [inputRef]);
+  if (user) {
+    console.log(
+      "this is from auth state. Means, we can check the user data from any page -->",
+      user
+    );
+  }
   const searchBar = (
     <>
       <div
@@ -87,7 +95,18 @@ const TopNav = () => {
               <div className={`${styles.topNav__registerIcon} mx-2`}>
                 <CgProfile className="text-secondary" size={30} />
               </div>
-              <p className="transition-all"> Profile</p>
+              <button
+                onClick={async () => {
+                  const success = await signOut();
+                  if (success) {
+                    toast.success("You are sign out");
+                  }
+                }}
+                className="transition-all"
+              >
+                {" "}
+                Logout
+              </button>
             </div>
           </div>
         </div>
